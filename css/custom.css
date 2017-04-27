@@ -1,0 +1,96 @@
+/**********************
+	  	Global
+**********************/
+
+.container {
+	width: auto;
+}
+
+/**********************
+	  Navigation
+**********************/
+
+.nav-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid gray;
+}
+
+.main_nav > ul {
+	margin: 1% 0;
+}
+
+.main_nav > ul > li {
+	list-style: none;
+	display: inline;
+	margin-right: 2%;
+}
+
+/**********************
+	Heading Banner
+**********************/
+
+.heading {
+	background-image: url('../imgs/mountain1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.heading > * {
+	color: white;
+}
+
+.heading3 {
+	margin-top: 10%;
+	margin-bottom: 25%;
+}
+
+.heading3 > h3 {
+	font-size: 4em;
+}
+
+.quote {
+	margin-bottom: 7%;
+}
+
+/**********************
+		About Us
+**********************/
+#about_section {
+	padding-top: 5%;
+	padding-bottom: 6%;
+}
+
+#about-left-column, #about-right-column {
+	margin-top: 2%;
+}
+
+#about-right-column > img {
+	width: 100%;
+}
+
+/**********************
+	    Gallery
+**********************/
+
+#gallery {
+	height: 650px;
+	background-color: rgb(229, 255, 229);
+}
+
+
+
+/**********************
+	    Calendar
+**********************/
+
+#calendar {
+	padding-top: 7%;
+}
+
+

@@ -1,52 +1,101 @@
 <!DOCTYPE html>
-<html lang="">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Serenity Hiking </title>
         <link rel="shortcut icon" href="">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/custom.css">
 
         <!--[if IE]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-    </head>
 
-    <body>
-        <div class="container">
-            <div class="nav-top">
-                <nav class="main_nav">
-                    <ul>
-                        <li> <a href="index.html"> Home </a> </li>
-                        <li> <a href="about.html"> About </a> </li>
-                        <li> <a href="#"> Contact </a> </li>
-                        <li> <a href="#"> Vision </a> </li>
-                    </ul>
-                </nav>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
-                <div class="nav-heading">
-                    <h3> SERENITY HIKING </h3>
-                </div>
+	</head>
+	<body>
+		 <div class="container">
+			 <div class="nav-top">
+			 	<nav class="main_nav">
+			 		<ul>
+						<li> <a href="#home" > Home </a> </li>
+			 			<li> <a href="#about_section" > About Us </a> </li>
+			 			<li> <a href="#gallery" > Gallery </a> </li>
+			 			<li> <a href="#calendar" > Calendar </a> </li>
+			 			<li> <a href="#contact" > Contact </a> </li>
+			 		</ul>
+			 	</nav>
+			 </div>
+			 
+			 <div class="row heading" id="home">
+			 	<div class="col-xs-12 text-center heading3">
+			 		<h3> SERENITY HIKING </h3>
+				</div>
+				<div class="col-xs-12 text-center quote">
+					<p> "In all things of nature there is something of the marvelous"- Aristotle </p>
+				</div>
+			 </div>
 
-                <div class="nav-quote">
-                    <p> "In all things of nature there is something of the marvelous"- Aristotle </p>
-                </div>
-            </div>
-            
-            <div class="main-content">
-                
-                <!-- slider -->
-                <div class="slider">
-                    
-                </div>
+		
+			 <div class="row" id="about_section">
+			 	<div class="col-xs-12 text-center">
+			 		<h4> About </h4>
+			 	</div>
+			 	<div class="col-xs-5 col-xs-offset-1" id="about-left-column">
+			 		<p>
+			 			Serenity Hiking was formed to offer people an alternative to handle mental stress as well as staying physically fit. We provide a more positive and social atmosphere than the typical gym allowing members to progress while also have fun. Overall success is met by the whole group and not just by the individual. This helps create that strong support system to really help with everyone's goals.
+			 		</p>
 
-            </div>
-        </div>
+			 		<p>		
+			 			As a member, you will freely have the oppportunity to join any of our listed hikes. They will range in difficulty so please feel free to contact us with any questions or concerns you may have before making a decision. Our hikes are guided by experienced hikers, however, it is important to note that we are not certified guides and our group is currently free to join. Presently we are undergoing a change and partnering with another group. Overall this wil give our members exposure to even more hikes with a larger variety of focus.
+			 		</p>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    </body>
-</html>
+			 		<p>
+			 			We are commited to bring about change within our communiities for healthier minds and bodies
+			 		</p>
+			 	</div>
+				 <div id="about-right-column" class="col-xs-5 text-center">
+					 <img src="imgs/health.jpg" alt="">
+				</div>
+			 </div>
+
+			 <div class="row" id="gallery">
+				<div class="col-xs-12 text-center">
+					<h4> Gallery </h4>
+				</div>
+			 </div>
+
+			 <div class="row" id="calendar">
+			 	<div class="col-xs-12 text-center">
+			 		<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=udivq4g5p814f1eamvtgp34fd8%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			 	</div>
+			 </div>
+
+		</div>
+
+
+
+
+		<script type="text/javascript">
+			$(function() {
+ 				$('a[href*="#"]:not([href="#"])').click(function() {
+    				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+     					var target = $(this.hash);
+     					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      					if (target.length) {
+        					$('html, body').animate({
+          						scrollTop: target.offset().top
+        					}, 1000);
+       					 return false;
+     					 }
+    				}
+  				});
+			});
+		</script>
+
+	</body>
+</html> 
